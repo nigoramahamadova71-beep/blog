@@ -25,7 +25,7 @@ SECRET_KEY = "django-insecure-xnbk3+fu+ugbpw$iu#bx%!mao6_@ps0j*3_x=x=vnyd_=lejod
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = ['localhost', '127.0.0.1', 'https://blog-68q2.onrender.com']
+ALLOWED_HOSTS = ['localhost', '127.0.0.1', '.onrender.com']
 
 
 # Application definition
@@ -120,3 +120,4 @@ DEFAULT_AUTO_FILED = "django.db.models.BigAutoFileld"
 STATICFILES_DIRS = [BASE_DIR / "static"]
 MEDIA_URL = "/media/"
 MEDIA_ROOT = BASE_DIR / "media"
+CSRF_TRUSTED_ORIGINS = ['https://blog-68q2.onrender.com']
